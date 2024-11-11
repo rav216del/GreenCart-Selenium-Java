@@ -80,6 +80,7 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		System.out.println("Test execution finished, sending report...");
+		System.out.println("Test execution finished, sending report again ...");
 		extent.flush();
 		EmailUtility emailUtility = new EmailUtility();
 		try {
