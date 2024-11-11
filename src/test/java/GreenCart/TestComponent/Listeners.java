@@ -75,14 +75,12 @@ public class Listeners implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext context) {
-		extentTest.get().log(Status.INFO, "Test Start");
 
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
 		System.out.println("Test execution finished, sending report...");
-		System.out.println("Test execution finished, sending report again ...");
 		extent.flush();
 		EmailUtility emailUtility = new EmailUtility();
 		try {
