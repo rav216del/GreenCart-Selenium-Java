@@ -75,6 +75,8 @@ public class Listeners implements ITestListener {
 
 	@Override
 	public void onStart(ITestContext context) {
+		extentTest.get().log(Status.INFO, "Test Start");
+
 	}
 
 	@Override
