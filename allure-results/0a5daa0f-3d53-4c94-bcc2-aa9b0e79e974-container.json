@@ -1,0 +1,1 @@
+{"uuid":"0a5daa0f-3d53-4c94-bcc2-aa9b0e79e974","name":"TestFolder.Test1.setup","children":["a2efe13c-2179-4e30-af22-2e2f13d51bbb"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1731355639587,"stop":1731355641103}],"afters":[],"start":1731355639587,"stop":1731355641103}

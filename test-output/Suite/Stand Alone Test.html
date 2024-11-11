@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Stand Alone Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 11 15:39:04 IST 2024</td>
+<td>Started on:</td><td>Mon Nov 11 23:34:11 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>33 seconds (33537 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35293 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,20 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='TestFolder.StandAloneTest.orderHistoryTest()'><b>orderHistoryTest</b><br>Test class: TestFolder.StandAloneTest</td>
-<td></td>
-<td>16</td>
-<td>TestFolder.StandAloneTest@736caf7a</td></tr>
-<tr>
-<td title='TestFolder.StandAloneTest.endToEndTest()'><b>endToEndTest</b><br>Test class: TestFolder.StandAloneTest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-wue-c36=&quot;&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1039, 473). Other element would receive the click: &lt;div class=&quot;ng-tns-c4-2 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success&quot; toast-component=&quot;&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/div&gt;
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-tgd-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1025, 27). Other element would receive the click: &lt;div _ngcontent-tgd-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=130.0.6723.116)
 Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5879b2caef3ca9fa976cbae02f046f40, clickElement {id=f.FEAAE537D3D8A936FFDB0405A1EEC2DA.d.772B10AE20164F331633CF2BD44C4517.e.103}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\RAVI~2.AGG\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54874}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54874/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (5879b2caef3ca9fa976cbae02f046f40)] -&gt; xpath: //button[contains(text(),&apos;Checkout&apos;)]]
-Session ID: 5879b2caef3ca9fa976cbae02f046f40
+Command: [3ef20f4e67536238644045412f871735, clickElement {id=f.74E5147719EDEEB4B91809C1FEFA9B65.d.D3457EE99DF52D04D7987A4C794AA756.e.97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\RAVI~2.AGG\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49289}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49289/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3ef20f4e67536238644045412f871735)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: 3ef20f4e67536238644045412f871735
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -102,23 +97,23 @@ Session ID: 5879b2caef3ca9fa976cbae02f046f40
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at GreenCart.PageObject.CartPage.goToCheckOut(CartPage.java:40)
-	at TestFolder.StandAloneTest.endToEndTest(StandAloneTest.java:38)
+	at GreenCart.PageObject.CommanLocators.goToCartPage(CommanLocators.java:28)
+	at TestFolder.StandAloneTest.orderHistoryTest(StandAloneTest.java:56)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1124579819", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1124579819'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-wue-c36=&quot;&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1039, 473). Other element would receive the click: &lt;div class=&quot;ng-tns-c4-2 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success&quot; toast-component=&quot;&quot; style=&quot;opacity: 1;&quot;&gt;...&lt;/div&gt;
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1202249518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1202249518'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-tgd-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1025, 27). Other element would receive the click: &lt;div _ngcontent-tgd-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=130.0.6723.116)
 Build info: version: &apos;4.5.3&apos;, revision: &apos;4b786a1e430&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5879b2caef3ca9fa976cbae02f046f40, clickElement {id=f.FEAAE537D3D8A936FFDB0405A1EEC2DA.d.772B10AE20164F331633CF2BD44C4517.e.103}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\RAVI~2.AGG\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54874}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54874/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (5879b2caef3ca9fa976cbae02f046f40)] -&gt; xpath: //button[contains(text(),&apos;Checkout&apos;)]]
-Session ID: 5879b2caef3ca9fa976cbae02f046f40
+Command: [3ef20f4e67536238644045412f871735, clickElement {id=f.74E5147719EDEEB4B91809C1FEFA9B65.d.D3457EE99DF52D04D7987A4C794AA756.e.97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\RAVI~2.AGG\AppData...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49289}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49289/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3ef20f4e67536238644045412f871735)] -&gt; css selector: [routerlink*=&apos;cart&apos;]]
+Session ID: 3ef20f4e67536238644045412f871735
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -139,8 +134,8 @@ Session ID: 5879b2caef3ca9fa976cbae02f046f40
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at GreenCart.PageObject.CartPage.goToCheckOut(CartPage.java:40)
-	at TestFolder.StandAloneTest.endToEndTest(StandAloneTest.java:38)
+	at GreenCart.PageObject.CommanLocators.goToCartPage(CommanLocators.java:28)
+	at TestFolder.StandAloneTest.orderHistoryTest(StandAloneTest.java:56)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,8 +159,22 @@ Session ID: 5879b2caef3ca9fa976cbae02f046f40
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
 </pre></div></td>
-<td>4</td>
-<td>TestFolder.StandAloneTest@736caf7a</td></tr>
+<td>2</td>
+<td>TestFolder.StandAloneTest@4dd02341</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestFolder.StandAloneTest.endToEndTest()'><b>endToEndTest</b><br>Test class: TestFolder.StandAloneTest</td>
+<td></td>
+<td>19</td>
+<td>TestFolder.StandAloneTest@4dd02341</td></tr>
 </table><p>
 </body>
 </html>

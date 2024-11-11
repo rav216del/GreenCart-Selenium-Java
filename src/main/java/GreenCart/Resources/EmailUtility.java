@@ -16,10 +16,10 @@ import javax.mail.internet.MimeMultipart;
 
 public class EmailUtility {
 
-	private final String fromEmail = "raviagg.del@gmail.com"; // Your email
-	private final String toEmail = "rav216del@gmail.com"; // Manager's email
+	private final String fromEmail = "jobsforraviaggarwal@gmail.com"; // Your email
+	private final String toEmail = "ravdel216@gmail.com"; // Manager's email
 	private final String smtpHost = "smtp.gmail.com"; // SMTP host
-	private final String smtpPort = "587"; // SMTP port (usually 587 for Gmail)
+	private final String smtpPort = "465"; // SMTP port (usually 587 for Gmail) 587
 
 	// Send email with report attached
 	public void sendReport(String[] reportPaths) throws MessagingException, IOException {
@@ -33,7 +33,7 @@ public class EmailUtility {
 		// Create the session
 		Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("raviagg.del@gmail.com", "Erica@12345");
+				return new PasswordAuthentication("jobsforraviaggarwal@gmail.com", "Ekisha@12345");
 			}
 		});
 

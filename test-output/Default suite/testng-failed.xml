@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestFolder.StandAloneTestWithDataProvider">
+      <class name="TestFolder.SubmitOrderExcelTest">
         <methods>
           <include name="tearDown"/>
-          <include name="endToEndTestWithDataProvider" invocation-numbers="1"/>
           <include name="setUp"/>
+          <include name="endToEndTestWithDataProvider" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- TestFolder.StandAloneTestWithDataProvider -->
+      </class> <!-- TestFolder.SubmitOrderExcelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

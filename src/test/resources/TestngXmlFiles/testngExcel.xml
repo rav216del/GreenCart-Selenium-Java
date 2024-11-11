@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+    <listener class-name="GreenCart.TestComponent.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestFolder.SubmitOrderExcelTest"/>
+      <class name="TestFolder.StandAloneTest"/>
+      <class name="GreenCart.TestComponent.BaseTest"/>
+      <class name="TestFolder.Test1"/>
+      <class name="TestFolder.ErrorValidationTest"/>
+      <class name="TestFolder.StandAloneTestWitrhHashMapData"/>
+      <class name="TestFolder.StandAloneTestWithDataProvider"/>
+      <class name="TestFolder.ExcelExampleTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
