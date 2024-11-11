@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 88.076 s <<< FAILURE! - in TestSuite
-TestFolder.Test1.foundThePassword  Time elapsed: 3.914 s  <<< FAILURE!
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 106.913 s <<< FAILURE! - in TestSuite
+TestFolder.Test1.foundThePassword  Time elapsed: 4.65 s  <<< FAILURE!
 java.lang.AssertionError: expected [Hello rahul,] but found []
 	at TestFolder.Test1.foundThePassword(Test1.java:123)
 

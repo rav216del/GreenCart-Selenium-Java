@@ -17,7 +17,6 @@ public class ErrorValidationTest extends BaseTest {
 	@Test
 	public void loginErrorValiadtionTest() {
 
-		// TODO Auto-generated method stub
 		String Productname = "ZARA COAT 3";
 		String country = "India";
 		LandingPage landingPage = new LandingPage(getDriver());

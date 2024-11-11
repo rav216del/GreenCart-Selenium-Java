@@ -1,5 +1,9 @@
 package GreenCart.TestComponent;
 
+import java.io.IOException;
+
+import javax.mail.MessagingException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -11,6 +15,7 @@ import com.aventstack.extentreports.Status;
 
 import GreenCart.AbstractComponent.AbstractComponent;
 import GreenCart.Resources.AllureReportNG;
+import GreenCart.Resources.EmailUtility;
 import GreenCart.Resources.ExtendReportNG;
 
 public class Listeners implements ITestListener {
@@ -74,7 +79,22 @@ public class Listeners implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
+		System.out.println("Test execution finished, sending report...");
 		extent.flush();
+		EmailUtility emailUtility = new EmailUtility();
+		try {
+			String[] reportPaths = { "C:/Users/ravi.aggarwal_infobe/eclipse-workspace/GreenCart/reports/index.html", // Extent
+																														// Report
+					"C:/Users/ravi.aggarwal_infobe/eclipse-workspace/GreenCart/allure-report/index.html" // Allure
+																											// Report
+			};
+			emailUtility.sendReport(reportPaths);
+		} catch (MessagingException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 //	@Override

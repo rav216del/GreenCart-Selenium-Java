@@ -2,9 +2,11 @@ GreenCart\PageObject\CartPage.class
 GreenCart\PageObject\CheckOutPage.class
 GreenCart\PageObject\ConfirmationPage.class
 GreenCart\AbstractComponent\AbstractComponent.class
+GreenCart\Resources\EmailUtility.class
 GreenCart\PageObject\CommanLocators.class
 GreenCart\PageObject\OrderPage.class
 GreenCart\Resources\AllureReportNG.class
 GreenCart\Resources\ExtendReportNG.class
 GreenCart\PageObject\ProductCataloguePage.class
 GreenCart\PageObject\LandingPage.class
+GreenCart\Resources\EmailUtility$1.class

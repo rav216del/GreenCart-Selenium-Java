@@ -6,8 +6,8 @@
       <class name="TestFolder.Test1">
         <methods>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="foundThePassword"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- TestFolder.Test1 -->
     </classes>
