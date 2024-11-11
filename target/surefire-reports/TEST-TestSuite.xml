@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="88.076" tests="7" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\ravi.aggarwal_infobe\.cache\selenium\chromedriver\win64\130.0.6723.116\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\ravi.aggarwal_infobe\eclipse-workspace\GreenCart\target\test-classes;C:\Users\ravi.aggarwal_infobe\eclipse-workspace\GreenCart\target\classes;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-java\4.5.3\selenium-java-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-api\4.5.3\selenium-api-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.5.3\selenium-chrome-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.5.3\selenium-chromium-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-json\4.5.3\selenium-json-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v104\4.5.3\selenium-devtools-v104-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v105\4.5.3\selenium-devtools-v105-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.5.3\selenium-devtools-v106-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.5.3\selenium-devtools-v85-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.5.3\selenium-edge-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.5.3\selenium-firefox-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.5.3\selenium-ie-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.5.3\selenium-remote-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-http\4.5.3\selenium-http-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.5.3\selenium-safari-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-support\4.5.3\selenium-support-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\ravi.aggarwal_infobe\AppData\Local\Temp\surefire1683137259833740484\surefirebooter2479116894404229200.jar C:\Users\ravi.aggarwal_infobe\AppData\Local\Temp\surefire1683137259833740484 2024-11-11T17-31-08_803-jvmRun1 surefire17298705142259697338tmp surefire_07648125702322915072tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\ravi.aggarwal_infobe\eclipse-workspace\GreenCart\target\test-classes;C:\Users\ravi.aggarwal_infobe\eclipse-workspace\GreenCart\target\classes;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-java\4.5.3\selenium-java-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-api\4.5.3\selenium-api-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.5.3\selenium-chrome-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.5.3\selenium-chromium-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-json\4.5.3\selenium-json-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v104\4.5.3\selenium-devtools-v104-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v105\4.5.3\selenium-devtools-v105-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.5.3\selenium-devtools-v106-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.5.3\selenium-devtools-v85-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.5.3\selenium-edge-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.5.3\selenium-firefox-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.5.3\selenium-ie-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.5.3\selenium-remote-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-http\4.5.3\selenium-http-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.5.3\selenium-safari-driver-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\seleniumhq\selenium\selenium-support\4.5.3\selenium-support-4.5.3.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.2\webdrivermanager-5.9.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java\3.4.0\docker-java-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java-core\3.4.0\docker-java-core-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java-api\3.4.0\docker-java-api-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.4.0\docker-java-transport-httpclient5-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\github\docker-java\docker-java-transport\3.4.0\docker-java-transport-3.4.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\testng\testng\7.7.1\testng-7.7.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.1\log4j-core-2.17.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.1\log4j-api-2.17.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\qameta\allure\allure-testng\2.29.0\allure-testng-2.29.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\qameta\allure\allure-java-commons\2.29.0\allure-java-commons-2.29.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\qameta\allure\allure-model\2.29.0\allure-model-2.29.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\io\qameta\allure\allure-test-filter\2.29.0\allure-test-filter-2.29.0.jar;C:\Users\ravi.aggarwal_infobe\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ravi.aggarwal_infobe"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\ravi.aggarwal_infobe\eclipse-workspace\GreenCart"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\ravi.aggarwal_infobe\AppData\Local\Temp\surefire1683137259833740484\surefirebooter2479116894404229200.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
+    <property name="user.name" value="ravi.aggarwal_infobe"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="firefox"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\ravi.aggarwal_infobe\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\RAVI~2.AGG\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="C:\Users\ravi.aggarwal_infobe\eclipse-workspace\GreenCart"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="C:\Users\ravi.aggarwal_infobe\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\apache-maven-3.9.9\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\ravi.aggarwal_infobe\allure-2.32.0\bin;C:\Users\ravi.aggarwal_infobe\AppData\Local\Microsoft\WindowsApps;C:\Users\ravi.aggarwal_infobe\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.2.4\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.11+7-LTS-207"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="endToEndTest" classname="TestFolder.StandAloneTest" time="14.802">
+    <system-out><![CDATA[Using browser: firefox
+ZARA COAT 3
+THANKYOU FOR THE ORDER.
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+1731326477312	geckodriver	INFO	Listening on 127.0.0.1:35777
+1731326477584	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "21878" "--remote ... host:21878/,http://[::1]:21878/" "-no-remote" "-profile" "C:\\Users\\RAVI~2.AGG\\AppData\\Local\\Temp\\rust_mozprofileKz3Y1Y"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731326478403	Marionette	INFO	Marionette enabled
+1731326478583	Marionette	INFO	Listening on port 56825
+Read port: 56825
+WebDriver BiDi listening on ws://127.0.0.1:21878
+1731326478752	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+console.warn: FormAutofillSection: isRecordCreatable: Country not supported: INDIA
+]]></system-err>
+  </testcase>
+  <testcase name="orderHistoryTest" classname="TestFolder.StandAloneTest" time="14.786">
+    <system-out><![CDATA[Using browser: firefox
+ZARA COAT 3
+$ 31500
+Ready to Ship
+]]></system-out>
+    <system-err><![CDATA[1731326499647	Marionette	INFO	Stopped listening on port 56825
+Dynamically enable window occlusion 1
+1731326500749	geckodriver	INFO	Listening on 127.0.0.1:14313
+1731326500770	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "24561" "--remote ... host:24561/,http://[::1]:24561/" "-no-remote" "-profile" "C:\\Users\\RAVI~2.AGG\\AppData\\Local\\Temp\\rust_mozprofilegdQZ8g"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731326501128	Marionette	INFO	Marionette enabled
+1731326501261	Marionette	INFO	Listening on port 56906
+Read port: 56906
+WebDriver BiDi listening on ws://127.0.0.1:24561
+1731326501344	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+console.warn: FormAutofillSection: isRecordCreatable: Country not supported: INDIA
+]]></system-err>
+  </testcase>
+  <testcase name="loginErrorValiadtionTest" classname="TestFolder.ErrorValidationTest" time="0.36">
+    <system-out><![CDATA[Using browser: firefox
+]]></system-out>
+    <system-err><![CDATA[1731326519645	Marionette	INFO	Stopped listening on port 56906
+Dynamically enable window occlusion 1
+1731326520597	geckodriver	INFO	Listening on 127.0.0.1:30210
+1731326520633	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "13696" "--remote ... host:13696/,http://[::1]:13696/" "-no-remote" "-profile" "C:\\Users\\RAVI~2.AGG\\AppData\\Local\\Temp\\rust_mozprofileKlcRAR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731326520980	Marionette	INFO	Marionette enabled
+1731326521111	Marionette	INFO	Listening on port 56961
+WebDriver BiDi listening on ws://127.0.0.1:13696
+Read port: 56961
+1731326521284	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+]]></system-err>
+  </testcase>
+  <testcase name="productErrorvalidationTest" classname="TestFolder.ErrorValidationTest" time="13.428">
+    <system-out><![CDATA[Using browser: firefox
+ZARA COAT 3
+false
+]]></system-out>
+    <system-err><![CDATA[1731326525444	Marionette	INFO	Stopped listening on port 56961
+Dynamically enable window occlusion 1
+1731326526557	geckodriver	INFO	Listening on 127.0.0.1:7057
+1731326526582	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "47293" "--remote ... host:47293/,http://[::1]:47293/" "-no-remote" "-profile" "C:\\Users\\RAVI~2.AGG\\AppData\\Local\\Temp\\rust_mozprofile4uMxIo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1731326526910	Marionette	INFO	Marionette enabled
+1731326527043	Marionette	INFO	Listening on port 56997
+WebDriver BiDi listening on ws://127.0.0.1:47293
+Read port: 56997
+1731326527225	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+]]></system-err>
+  </testcase>
+  <testcase name="checkTheLocators" classname="TestFolder.Test1" time="5.127">
+    <system-out><![CDATA[* Incorrect username or password
+Please use temporary password 'rahulshettyacademy' to Login.
+Hello rahul,
+]]></system-out>
+    <system-err><![CDATA[1731326544246	Marionette	INFO	Stopped listening on port 56997
+Dynamically enable window occlusion 1
+Starting ChromeDriver 130.0.6723.116 (6ac35f94ae3d01152cf1946c896b0678e48f8ec4-refs/branch-heads/6723@{#1764}) on port 29070
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 29070.
+Nov 11, 2024 5:32:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+Nov 11, 2024 5:32:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.5.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="foundThePassword" classname="TestFolder.Test1" time="3.914">
+    <failure message="expected [Hello rahul,] but found []" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Hello rahul,] but found []
+	at TestFolder.Test1.foundThePassword(Test1.java:123)
+]]></failure>
+    <system-out><![CDATA[* Incorrect username or password
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 130.0.6723.116 (6ac35f94ae3d01152cf1946c896b0678e48f8ec4-refs/branch-heads/6723@{#1764}) on port 34639
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 34639.
+Nov 11, 2024 5:32:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+Nov 11, 2024 5:32:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.5.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="openGoogleTest" classname="TestFolder.Test1" time="1.339">
+    <system-out><![CDATA[Page title is: Selenium, API Testing, Software Testing & More QA Tutorials | Rahul Shetty Academy
+Current url is: https://rahulshettyacademy.com/
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 130.0.6723.116 (6ac35f94ae3d01152cf1946c896b0678e48f8ec4-refs/branch-heads/6723@{#1764}) on port 15597
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 15597.
+Nov 11, 2024 5:32:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+Nov 11, 2024 5:32:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.5.3` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>
