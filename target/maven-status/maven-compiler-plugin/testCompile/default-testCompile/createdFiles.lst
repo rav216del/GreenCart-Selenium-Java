@@ -1,0 +1,9 @@
+TestFolder\StandAloneTest.class
+TestFolder\ErrorValidationTest.class
+TestFolder\StandAloneTestWitrhHashMapData.class
+GreenCart\JsonData\DataReader.class
+TestFolder\Test1.class
+GreenCart\TestComponent\Listeners.class
+GreenCart\TestComponent\Retry.class
+GreenCart\TestComponent\BaseTest.class
+TestFolder\StandAloneTestWithDataProvider.class
