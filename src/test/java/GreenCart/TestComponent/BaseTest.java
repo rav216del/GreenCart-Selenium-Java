@@ -11,25 +11,22 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class BaseTest {
-	// Use ThreadLocal for WebDriver to ensure each thread gets its own instance
+	// Use ThreadLocal
 	protected static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	private Properties properties;
 
-	// Constructor to load properties only once
+	// Constructor
 	public BaseTest() {
 		properties = new Properties();
 		try {
 			String projectPath = System.getProperty("user.dir"); // Get project root directory
 			FileInputStream fileInputStream = new FileInputStream(
-					projectPath + "/src/main/java/GreenCart/Resources/GlobalData.properties");
+					projectPath + "/src/main/resources/GlobalData.properties");
 			properties.load(fileInputStream);
 			fileInputStream.close();
 		} catch (IOException e) {
@@ -37,35 +34,47 @@ public class BaseTest {
 		}
 	}
 
-	// Method to initialize WebDriver based on the browser specified in properties
-	// file
+	// Method to initialize WebDriver
 	public WebDriver initializeDriver() {
-		// String browserName = properties.getProperty("browser",
-		// "chrome").toLowerCase();
-		String browserName = System.getProperty("browser", properties.getProperty("browser", "chrome")).toLowerCase();
-		System.out.println("Using browser: " + browserName); // Debugging log
+		String browserName = properties.getProperty("browser", "chrome").toLowerCase();
+		System.out.println("Using browser: " + browserName);
 
-		WebDriver localDriver = null;
+		WebDriver localDriver;
 
 		switch (browserName) {
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
+			localDriver = new ChromeDriver();
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments("--remote-allow-origins=*");
+			chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
+			chromeOptions.addArguments("--ignore-certificate-errors"); // Ignore certificate errors
+			chromeOptions.addArguments("--allow-insecure-localhost");
+			chromeOptions.addArguments("--disable-popup-blocking");
+			chromeOptions.addArguments("--disable-notifications");
+			chromeOptions.setAcceptInsecureCerts(true);
+			chromeOptions.addArguments("--disable-web-security");
 			chromeOptions.addArguments("--no-sandbox");
+
+			chromeOptions.addArguments("--disable-gpu");
+			chromeOptions.addArguments("--disable-extensions");
+			chromeOptions.addArguments("--ignore-ssl-errors=yes");
+			chromeOptions.addArguments("--ignore-certificate-errors");
 			chromeOptions.addArguments("--disable-dev-shm-usage");
+			chromeOptions.addArguments("--remote-allow-origins=*");
+			chromeOptions.addArguments("--enable-automation");
+			chromeOptions.addArguments("--allow-running-insecure-content");
 			localDriver = new ChromeDriver(chromeOptions);
-			break;
 
 		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
-			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			localDriver = new FirefoxDriver(firefoxOptions);
+
+			localDriver = new FirefoxDriver();
 			break;
 
 		case "edge":
-			WebDriverManager.edgedriver().setup();
 			EdgeOptions edgeOptions = new EdgeOptions();
+			edgeOptions.setAcceptInsecureCerts(true);
+			edgeOptions.addArguments("--ignore-certificate-errors");
+			edgeOptions.addArguments("--disable-web-security");
+			edgeOptions.addArguments("--allow-running-insecure-content");
 			localDriver = new EdgeDriver(edgeOptions);
 			break;
 
@@ -74,18 +83,15 @@ public class BaseTest {
 			break;
 
 		default:
-			System.out.println("Unsupported browser specified, defaulting to Chrome");
-			WebDriverManager.chromedriver().setup();
-			localDriver = new ChromeDriver();
-			break;
+			throw new IllegalArgumentException("Unsupported browser: " + browserName);
 		}
-
-		localDriver.manage().window().maximize();
+		localDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 		localDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		localDriver.manage().window().maximize();
 		return localDriver;
+
 	}
 
-	// Getter for properties to access them across tests
 	public String getProperty(String key) {
 		return properties.getProperty(key);
 	}
@@ -95,20 +101,23 @@ public class BaseTest {
 		return driver.get();
 	}
 
-	// Method to launch the application and navigate to URL
 	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		if (driver.get() == null) {
 			driver.set(initializeDriver()); // Initialize WebDriver if not already set
-			driver.get().get(getProperty("url")); // Navigate to URL defined in properties
+			String url = getProperty("url");
+			if (url == null || url.isEmpty()) {
+				throw new IllegalArgumentException("URL property is not set in the properties file.");
+			}
+			driver.get().get(url);
 		}
 	}
 
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		if (driver.get() != null) {
-			driver.get().quit(); // Quit WebDriver instance
-			driver.remove(); // Clean up the ThreadLocal WebDriver
+			driver.get().quit();
+			driver.remove();
 		}
 	}
 }

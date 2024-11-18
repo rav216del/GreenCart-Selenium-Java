@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestFolder.Test1" class="method navigator-link" hash-for-method="foundThePassword">foundThePassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,22 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestFolder.Test1" class="method navigator-link" hash-for-method="checkTheLocators">checkTheLocators</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestFolder.StandAloneTest" class="method navigator-link" hash-for-method="endToEndTest">endToEndTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestFolder.ErrorValidationTest" class="method navigator-link" hash-for-method="loginErrorValiadtionTest">loginErrorValiadtionTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestFolder.Test1" class="method navigator-link" hash-for-method="openGoogleTest">openGoogleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -157,48 +133,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestFolder.Test1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="foundThePassword">
-                  </a> <!-- foundThePassword -->
-                  <span class="method-name">foundThePassword</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Hello rahul,] but found []
-	at TestFolder.Test1.foundThePassword(Test1.java:123)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestFolder.ErrorValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginErrorValiadtionTest">
-                  </a> <!-- loginErrorValiadtionTest -->
-                  <span class="method-name">loginErrorValiadtionTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="productErrorvalidationTest">
-                  </a> <!-- productErrorvalidationTest -->
-                  <span class="method-name">productErrorvalidationTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -224,21 +158,21 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestFolder.Test1</span>
+              <span class="class-name">TestFolder.ErrorValidationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkTheLocators">
-                  </a> <!-- checkTheLocators -->
-                  <span class="method-name">checkTheLocators</span>
+                  <a name="loginErrorValiadtionTest">
+                  </a> <!-- loginErrorValiadtionTest -->
+                  <span class="method-name">loginErrorValiadtionTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openGoogleTest">
-                  </a> <!-- openGoogleTest -->
-                  <span class="method-name">openGoogleTest</span>
+                  <a name="productErrorvalidationTest">
+                  </a> <!-- productErrorvalidationTest -->
+                  <span class="method-name">productErrorvalidationTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -263,11 +197,6 @@
       &lt;class name=&quot;TestFolder.ErrorValidationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Error Validation Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Miscellenous Test&quot; verbose=&quot;0&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;TestFolder.Test1&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Miscellenous Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -283,9 +212,6 @@
               </li>
               <li>
                 <span class="test-name">Error Validation Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Miscellenous Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -311,40 +237,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'orderHistoryTest')
 data.setCell(0, 2, 'TestFolder.StandAloneTest')
-data.setCell(0, 3, 15373);
+data.setCell(0, 3, 15257);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'endToEndTest')
 data.setCell(1, 2, 'TestFolder.StandAloneTest')
-data.setCell(1, 3, 15265);
+data.setCell(1, 3, 15251);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'productErrorvalidationTest')
 data.setCell(2, 2, 'TestFolder.ErrorValidationTest')
-data.setCell(2, 3, 13701);
+data.setCell(2, 3, 13408);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'checkTheLocators')
-data.setCell(3, 2, 'TestFolder.Test1')
-data.setCell(3, 3, 6899);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'foundThePassword')
-data.setCell(4, 2, 'TestFolder.Test1')
-data.setCell(4, 3, 4722);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'openGoogleTest')
-data.setCell(5, 2, 'TestFolder.Test1')
-data.setCell(5, 3, 1798);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginErrorValiadtionTest')
-data.setCell(6, 2, 'TestFolder.ErrorValidationTest')
-data.setCell(6, 3, 554);
+data.setCell(3, 1, 'loginErrorValiadtionTest')
+data.setCell(3, 2, 'TestFolder.ErrorValidationTest')
+data.setCell(3, 3, 364);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -377,91 +291,50 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">endToEndTest</span>
-                <span class="method-start">10850 ms</span>
+                <span class="method-start">6413 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26136 ms</span>
+                <span class="method-start">21675 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">27688 ms</span>
+                <span class="method-start">22622 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">orderHistoryTest</span>
-                <span class="method-start">36053 ms</span>
+                <span class="method-start">27397 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51434 ms</span>
+                <span class="method-start">42656 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestFolder.ErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">53059 ms</span>
+                <span class="method-start">43503 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginErrorValiadtionTest</span>
-                <span class="method-start">59658 ms</span>
+                <span class="method-start">48606 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">60218 ms</span>
+                <span class="method-start">48973 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">61963 ms</span>
+                <span class="method-start">49856 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">productErrorvalidationTest</span>
-                <span class="method-start">70486 ms</span>
+                <span class="method-start">55508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">84190 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestFolder.Test1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">85622 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkTheLocators</span>
-                <span class="method-start">87875 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">94776 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">95240 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">foundThePassword</span>
-                <span class="method-start">96741 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">101470 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">101922 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">openGoogleTest</span>
-                <span class="method-start">103361 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">105161 ms</span>
+                <span class="method-start">68920 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

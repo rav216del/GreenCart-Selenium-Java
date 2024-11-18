@@ -2,7 +2,9 @@ package GreenCart.Resources;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Date;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -14,9 +16,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtility {
 
 	private Workbook workbook;
+	private String filePath;
 
 	// Constructor to initialize the file path and workbook
 	public ExcelUtility(String filePath) {
+		this.filePath = filePath;
 		try {
 			FileInputStream file = new FileInputStream(new File(filePath));
 			if (filePath.endsWith(".xlsx")) {
@@ -85,6 +89,38 @@ public class ExcelUtility {
 			}
 		}
 		return -1; // Return -1 if the column is not found
+	}
+
+	// Method to write data to a specific cell
+	public void writeData(String sheetName, int rowNum, int colNum, String data) {
+		try {
+			Sheet sheet = workbook.getSheet(sheetName);
+			Row row = sheet.getRow(rowNum);
+			if (row == null) {
+				row = sheet.createRow(rowNum);
+			}
+			Cell cell = row.getCell(colNum, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+			cell.setCellValue(data);
+			saveChanges();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	// Method to log test result status, runtime, and timestamp
+	public void logTestResult(String sheetName, int rowNum, String status, long runtime) {
+		writeData(sheetName, rowNum, 3, status); // Column 3 for Status
+		writeData(sheetName, rowNum, 4, new Date().toString()); // Column 4 for Timestamp
+		writeData(sheetName, rowNum, 5, runtime + " ms"); // Column 5 for Runtime
+	}
+
+	// Helper method to save changes to the Excel file
+	private void saveChanges() {
+		try (FileOutputStream fos = new FileOutputStream(new File(filePath))) {
+			workbook.write(fos);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	// Method to close the workbook

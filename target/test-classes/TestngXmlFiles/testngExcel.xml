@@ -9,7 +9,6 @@
       <class name="TestFolder.SubmitOrderExcelTest"/>
       <class name="TestFolder.StandAloneTest"/>
       <class name="GreenCart.TestComponent.BaseTest"/>
-      <class name="TestFolder.Test1"/>
       <class name="TestFolder.ErrorValidationTest"/>
       <class name="TestFolder.StandAloneTestWitrhHashMapData"/>
       <class name="TestFolder.StandAloneTestWithDataProvider"/>

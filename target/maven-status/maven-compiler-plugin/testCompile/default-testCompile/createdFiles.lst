@@ -1,9 +1,11 @@
 TestFolder\StandAloneTest.class
+TestDataProviders\ExcelDataProvider.class
 TestFolder\ErrorValidationTest.class
 TestFolder\StandAloneTestWitrhHashMapData.class
+TestFolder\SubmitOrderExcelTest.class
 GreenCart\JsonData\DataReader.class
-TestFolder\Test1.class
 GreenCart\TestComponent\Listeners.class
 GreenCart\TestComponent\Retry.class
+TestFolder\ExcelExampleTest.class
 GreenCart\TestComponent\BaseTest.class
 TestFolder\StandAloneTestWithDataProvider.class

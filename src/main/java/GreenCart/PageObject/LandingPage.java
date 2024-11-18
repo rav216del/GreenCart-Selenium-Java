@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import GreenCart.AbstractComponent.AbstractComponent;
+import GreenCart.Resources.Log;
 
 public class LandingPage extends AbstractComponent {
 	WebDriver driver;
@@ -33,8 +34,11 @@ public class LandingPage extends AbstractComponent {
 
 	public void loginApplication(String email, String password) {
 		userEmail.sendKeys(email);
+		Log.info("user enter the email");
 		userPassword.sendKeys(password);
+		Log.info("user enter the password");
 		login.click();
+		Log.info("user click on the enter button");
 	}
 
 	public boolean isErrorMessageDisplayed(String expectedMessage) {

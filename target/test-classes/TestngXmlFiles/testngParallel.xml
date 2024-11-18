@@ -14,9 +14,4 @@
       <class name="TestFolder.ErrorValidationTest"/>
     </classes>
   </test> <!-- Test -->
-   <test thread-count="5" name="Miscellenous Test">
-    <classes>
-      <class name="TestFolder.Test1"/>
-    </classes>
-  </test> <!-- Test -->
 </suite> <!-- Suite -->
